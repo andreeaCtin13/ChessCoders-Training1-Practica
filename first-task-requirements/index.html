@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- UPDATE DOCUMENT'S TITLE -->
+    <title>Document</title>
+    <link rel="stylesheet" href="./assets/style.css" />
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=Oswald:wght@300&family=Permanent+Marker&display=swap");
+    </style>
+  </head>
+  <body>
+    <header>
+      <ion-icon
+        name="information-circle-outline"
+        onclick="alertDisplay()"
+      ></ion-icon>
+      <button
+        id="cutare"
+        class="headerIcons"
+        onclick="window.location.reload()"
+      >
+        <h1>Training Programme</h1>
+      </button>
+      <ion-icon name="person-outline" onclick="alertDisplay()"></ion-icon>
+    </header>
+    <main>
+      <section id="introduction">
+        <h1 class="title padd">Introduction</h1>
+        <div class="content-intro">
+          <p>
+            This spring, Chess Coders offers a
+            <u>free training programee</u> specifically for students with high
+            interest in a Web Development carrer.
+          </p>
+          <br />
+          <p>
+            Before starting out, please consult our crafted list of useful
+            resources to consult during your training:
+          </p>
+          <br />
+
+          <ul>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/HTML"
+                >Official HTML Documentation
+              </a>
+              - Mozilla Developer Network
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/CSS"
+                >Official CSS Documentation
+              </a>
+              - Mozilla Developer Network
+            </li>
+            <li>
+              <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript">
+                Official Java Documentation
+              </a>
+              - Mozilla Developer Network
+            </li>
+            <li>
+              <a href="https://w3schools.com">W3Schools.org</a> - Learn to Code
+              with the world's largest web developer site.
+            </li>
+          </ul>
+        </div>
+        <br />
+
+        <h3>
+          Come and join us at
+          <div>
+            <span class="black">CHESS</span>
+            <span class="white">CODERS</span>
+          </div>
+        </h3>
+      </section>
+      <h1 class="title">At Galance</h1>
+      <section class="cards">
+        <div class="card card-1">
+          <h2 class="card-content">HTML5</h2>
+        </div>
+        <div class="card card-2">
+          <h2 class="card-content">CSS</h2>
+        </div>
+        <div class="card card-3">
+          <h2 class="card-content">JavaScript</h2>
+        </div>
+      </section>
+
+      <section>
+        <table>
+          <tr>
+            <td><div class="first">Technology</div></td>
+            <td><div class="first">Estimated learning time</div></td>
+          </tr>
+          <tr>
+            <td>HTML5</td>
+            <td>10hours</td>
+          </tr>
+          <tr>
+            <td>CSS3</td>
+            <td>20hours</td>
+          </tr>
+          <tr>
+            <td>JavaScript</td>
+            <td>a lifetime</td>
+          </tr>
+        </table>
+      </section>
+      <section id="form">
+        <h1 class="title">Get in touch</h1>
+        <p style="text-align: center; padding-top: 2rem">
+          Use the form below to contact us. Make sure to fill in all of the
+          <i>required</i> fields.
+        </p>
+        <form>
+          <input type="text" placeholder="Your name..." />
+          <input type="text" placeholder="Your email..." required />
+          <label class="lbl" for="date">Please choose a date</label>
+          <input type="date" id="date" />
+          <label class="lbl" for="category">Please choose a category</label>
+          <select name="" id="category">
+            <option value="" default>General</option>
+            <option value="">Technical</option>
+            <option value="">Other</option>
+          </select>
+          <label class="lbl" for="message">Your message</label>
+          <textarea name="" id="message" cols="30" rows="10"></textarea>
+          <div class="flex-form">
+            <input type="checkbox" name="check" required />
+            <label for="check">I agree to the term and conditions</label>
+          </div>
+          <button class="btnForm">
+            Send message
+            <ion-icon id="sent" name="send-outline"></ion-icon>
+          </button>
+        </form>
+      </section>
+    </main>
+    <footer>
+      <p>
+        Made with <ion-icon id="heart" name="heart-outline"></ion-icon> by
+        <a href="https://chesscoders.com/">Chess Coders</a>
+      </p>
+    </footer>
+  </body>
+  <script src="./assets/script.js"></script>
+</html>
